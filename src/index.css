@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+  max-width: 1440px;
+  padding: 0 24px;
+}
+
+input:focus {
+  --tw-ring-offset-width: 0px !important;
+  box-shadow: none !important;
+}
