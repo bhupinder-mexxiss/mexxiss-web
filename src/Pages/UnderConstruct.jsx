@@ -10,9 +10,9 @@ const UnderConstruct = () => {
         <div className="flex items-center gap-10 justify-center max-w-[1080px] mx-auto">
           <div className="">
             {/* <p className="text-6xl text-primary font-bold">Oops!</p> */}
-            <p className="text-[40px] word- text-text1 font-bold mt-8 uppercase">
+            <p className="text-2xl word- text-text1 font-bold mt-8 uppercase">
               <span className="text-primary">Website</span> is Under <br />{" "}
-              <span className="text-5xl">Construction</span>
+              <span className="">Construction and Enhancement</span>
             </p>
             <button className="rounded text-xl text-white font-medium mt-8 uppercase bg-red-gradient px-4 py-2">
               Coming Soon

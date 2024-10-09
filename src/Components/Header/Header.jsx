@@ -24,7 +24,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-1.5 md:gap-2.5">
                 <img src={phoneIcon} alt="" className="w-4 sm:w-5" />
-                <span className="opacity-80">+91 987 6654 321</span>
+                <span className="opacity-80">+91 8779043458</span>
               </div>
             </div>
             <div className="text-white text-xs md:text-sm flex gap-4 md:gap-10">
