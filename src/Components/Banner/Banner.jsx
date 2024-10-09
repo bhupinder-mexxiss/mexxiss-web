@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import homepagebanner from "../../assets/images/homepagebanner.png";
+import banner2 from "../../assets/images/banner2.png";
+import banner3 from "../../assets/images/banner3.png";
 import {
   EastOutlined,
   KeyboardArrowLeftOutlined,
@@ -31,6 +33,20 @@ import "./Banner.css";
 
 const Banner = () => {
   let sliderRef = useRef(null);
+
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    fade: true,
+    speed: 500,
+  };
+
   const settings = {
     dots: false,
     infinite: false,
@@ -65,6 +81,7 @@ const Banner = () => {
       },
     ],
   };
+
   const next = () => {
     sliderRef.current.slickNext();
   };
@@ -87,11 +104,11 @@ const Banner = () => {
       logo: icon26,
     },
     {
-      name: "Global Real Estate Marketplace Business",
+      name: "Global Real Estate Marketplace",
       logo: icon24,
     },
     {
-      name: "Holiday Homes & Short Terms Rentals",
+      name: "Holiday Homes & Rentals",
       logo: icon20,
     },
     {
@@ -103,15 +120,15 @@ const Banner = () => {
       logo: icon22,
     },
     {
-      name: "Steel Production Plants & Machinery Solutions",
+      name: "Steel Plants & Machinery",
       logo: icon17,
     },
     {
-      name: "Industrial Plants & Machinery Solutions",
+      name: "Industrial Plants & Machinery",
       logo: icon28,
     },
     {
-      name: "Steel Meltshop Material Handling Solutions",
+      name: "Steel Meltshop Material Handling",
       logo: icon19,
     },
     {
@@ -119,7 +136,7 @@ const Banner = () => {
       logo: icon18,
     },
     {
-      name: "Metal Scrap Recycling & Procurement Solutions",
+      name: "Metal Scrap Recycling & Procurement",
       logo: icon21,
     },
     {
@@ -156,50 +173,67 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="Banner">
+    <div className="Banner relative">
       <div
-        className="pt-[100px] py-36 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${homepagebanner})` }}
+        // className="pt-[100px] py-36 bg-cover bg-no-repeat"
+        // style={{ backgroundImage: `url(${homepagebanner})` }}
+        className="relative after:absolute after:w-full after:h-[500px]  after:left-0 after:top-0 after:bg-black after:bg-opacity-60 "
       >
-        <div className="container mx-auto">
-          <div>
-            <div className="">
-              <div className="text-center">
-                <div className="text-center">
-                  <div className="bg-[#FFFFFF4D] px-8 py-2.5 text-white rounded flex justify-center items-center backdrop-filter backdrop:blur-xl w-fit mx-auto">
-                    <p>Empowering businesses through cutting edge</p>
-                  </div>
-                  <h1 className="mt-6 text-5xl font-bold text-primary leading-[52px] ">
-                    Technology Solutions
-                  </h1>
-                  <div className=" max-w-[600px] mx-auto mt-10">
-                    <p className="text-heading mb-4">
-                      Search Products & Verified Resources Near You.
-                    </p>
-                    <div className="flex items-center">
-                      <input
-                        type="text"
-                        placeholder="Enter Product/Service Name"
-                        className="text-[#212529] border-none w-full h-11"
-                      />
-                      <button className="bg-red-gradient py-2 px-4 text-white h-11">
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex justify-center mt-6">
-                    <Link
-                      to="/explore"
-                      className=" w-fit text-white bg-red-gradient px-5 py-2 text-sm font-medium rounded flex items-center gap-2 group mx-auto lg:mx-0"
-                    >
-                      <span>Explore Now</span>
-                      <span className="duration-300 group-hover:translate-x-2">
-                        <EastOutlined />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
+        <div className="">
+          <Slider {...settings2}>
+            <div className="h-[500px] ">
+              <img
+                src={homepagebanner}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="h-[500px] ">
+              <img
+                src={banner2}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="h-[500px] ">
+              <img
+                src={banner3}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+          </Slider>
+        </div>
+        <div className="flex items-start justify-center absolute z-20 h-[500px] top-0 left-1/2 -translate-x-1/2">
+          <div className="text-center pt-[60px]">
+            <div className="bg-[#FFFFFF4D] px-8 py-2.5 text-white rounded flex justify-center items-center backdrop-filter backdrop:blur-xl w-fit mx-auto">
+              <p>Empowering businesses through cutting edge</p>
+            </div>
+            <h1 className="mt-6 text-5xl font-bold text-primary leading-[52px] ">
+              Technology Solutions
+            </h1>
+            <div className=" max-w-[600px] mx-auto mt-10">
+              <p className="text-heading mb-4">
+                Search Products & Verified Resources Near You.
+              </p>
+              <div className="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Enter Product/Service Name"
+                  className="text-[#212529] border-none w-full h-11"
+                />
+                <button className="bg-red-gradient py-2 px-4 text-white h-11">
+                  Search
+                </button>
               </div>
+            </div>
+            <div className="flex justify-center mt-6">
+              <Link
+                to="/explore"
+                className=" w-fit text-white bg-red-gradient px-5 py-2 text-sm font-medium rounded flex items-center gap-2 group mx-auto lg:mx-0"
+              >
+                <span>Explore Now</span>
+                <span className="duration-300 group-hover:translate-x-2">
+                  <EastOutlined />
+                </span>
+              </Link>
             </div>
           </div>
         </div>
