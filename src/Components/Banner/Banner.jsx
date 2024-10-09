@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import homepagebanner from "../../assets/images/homepagebanner.png";
 import banner2 from "../../assets/images/banner2.png";
 import banner3 from "../../assets/images/banner3.png";
+import banner4 from "../../assets/images/banner4.png";
 import {
   EastOutlined,
   KeyboardArrowLeftOutlined,
@@ -196,6 +197,12 @@ const Banner = () => {
             <div className="h-[500px] ">
               <img
                 src={banner3}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="h-[500px] ">
+              <img
+                src={banner4}
                 className="h-full w-full object-cover object-center"
               />
             </div>
