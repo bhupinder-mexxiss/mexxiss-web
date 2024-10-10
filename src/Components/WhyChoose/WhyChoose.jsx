@@ -27,7 +27,7 @@ const WhyChoose = () => {
                   Industry Expertise
                 </h6>
                 <p className="text-text2 text-sm">
-                  With 5 years of experience, we are industry leaders in steel
+                  With 25 years of experience, we are industry leaders in steel
                   manufacturing and machinery production. Our seasoned experts
                   bring unparalleled knowledge and insights to every project.
                 </p>
@@ -40,7 +40,7 @@ const WhyChoose = () => {
                   Quality Assurance
                 </h6>
                 <p className="text-text2 text-sm">
-                  At STEELVISTA, quality is non-negotiable. Our rigorous quality
+                  At MEXXISS TECHNOLOGIES, quality is non-negotiable. Our rigorous quality
                   control measures guarantee that every steel product and
                   machinery component meets the highest industry standards. We
                   take pride in delivering excellence.
@@ -68,8 +68,8 @@ const WhyChoose = () => {
                   Proven Track Record
                 </h6>
                 <p className="text-text2 text-sm">
-                  Over the years, we have successfully delivered projects for
-                  clients across various industries. Our proven track record
+                  Over the years, we have successfully delivered the turnkey projects for
+                  the global clients across various industries. Our proven track record
                   speaks to our reliability, consistency, and ability to exceed
                   expectations.
                 </p>
